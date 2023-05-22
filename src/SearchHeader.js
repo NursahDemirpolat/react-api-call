@@ -1,10 +1,17 @@
-function SearchHeader() {
+function SearchHeader({search}) {
+
+const handleFormSubmit = (event) => {
+    event.preventDefault();
+    debugger;
+    search("nursah");
+}
+
     return (
         <div className="searchDiv">
-            <from className="seacrhFrom">
+            <form onSubmit={handleFormSubmit} className="seacrhFrom">
                 <label>Ne Arıyorsunuz?</label>
                 <input type="text"/>
-            </from>
+            </form>
         </div>
     )
 }
