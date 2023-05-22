@@ -1,14 +1,44 @@
 
-.App{
+.App {
   margin: 10px;
 }
+
 .searchDiv {
   border: 1px solid lightgray;
   padding: 10px;
   border-radius: 5px;
-
 }
+
 .seacrhFrom {
   display: flex;
   flex-direction: column;
 }
+
+.seacrhInput {
+  margin-top: 10px;
+  max-width: fit-content;
+  align-self: center;
+}
+
+.seacrhTitle {
+  align-self: center;
+  text-shadow: 0px 0px 1px black, 1px 1px 2px #000b8b, 0 0 20px #224eb2eb, 0 0 5px #1457ed;
+  color: lightblue;
+  font-size: 2em;
+}
+
+.seacrhInput:focus{
+  border:3px solid lightblue;
+  border-radius: 3px;
+}
+
+.imageList {
+  columns: 250px 5;
+  column-gap: 10px;
+}
+
+.imageItem {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
